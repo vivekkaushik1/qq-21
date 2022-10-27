@@ -3,7 +3,7 @@ echo hello world
 x=1
 y=1
 j=1
-while [ $x -le 10 ]
+while [ $x -le 1000 ]
 do
   x=$(( $x + 1 ))
   sh ./createCommit.sh
@@ -16,5 +16,6 @@ do
   #git push --tags origin
   #git checkout master
   #git merge $string
+  sleep 20.0
 done
 
