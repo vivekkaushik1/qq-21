@@ -7,12 +7,13 @@ while [ $x -le 1000 ]
    echo $string
    eval "$string"
    x=$[$x+1]
-   #sleep 20.0
+   sleep 10.0
    #git add .
-   #git commit -m "ADO Commits"
+   git commit -m "ADO Commits"
    #git tag -a PerformanceTest11.$((j+x)) -m "vversion Pt1.1$((j+x))"
    #sh ./createCOmmitsTags.sh
    #x=$(( $x + 1 ))
+   git push
    echo "Completed Script Invocaton"
 done
-git push
+#git push
